@@ -125,7 +125,16 @@ export function SiteFooter({ settings }: { settings: Settings }) {
           <p>
             © {year} {settings.siteName}. All rights reserved.
           </p>
-          <p>{settings.footerNote}</p>
+          <p className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>{settings.footerNote}</span>
+            <span aria-hidden="true" className="hidden h-3 w-px bg-white/20 sm:inline-block" />
+            <span>
+              Developed by{" "}
+              <a href="https://datixai.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-white/80 underline-offset-4 transition hover:text-saffron hover:underline">
+                Datix AI
+              </a>
+            </span>
+          </p>
         </div>
       </div>
     </footer>

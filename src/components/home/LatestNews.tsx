@@ -34,7 +34,7 @@ export function LatestNews({ news }: { news: NewsItem[] }) {
         <SectionHeading
           align="center"
           eyebrow="News & updates"
-          title="From the Government of AJ&K"
+          title="From the Government of AJK"
           action={
             <Link href="/news" className="inline-flex items-center gap-2 rounded-full border border-pine-700 px-5 py-2.5 text-sm font-semibold text-pine-700 transition hover:bg-pine-700 hover:text-white">
               All news <ArrowRight className="size-4" />

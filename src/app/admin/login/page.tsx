@@ -15,12 +15,12 @@ export default async function LoginPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-pine-950 to-transparent" />
         <div className="absolute bottom-12 left-12 right-12 text-white">
           <p className="font-display text-4xl font-semibold">Content management</p>
-          <p className="mt-3 max-w-md text-white/75">Authorised staff of the Government of AJ&amp;K only. All actions are recorded in the activity log.</p>
+          <p className="mt-3 max-w-md text-white/75">Authorised staff of the Government of AJK only. All actions are recorded in the activity log.</p>
         </div>
       </div>
       <div className="grid place-items-center p-6">
         <div className="w-full max-w-sm">
-          <Image src="/images/site/seal.png" alt="Seal of AJ&K" width={72} height={72} />
+          <Image src="/images/site/seal.png" alt="Seal of AJK" width={72} height={72} />
           <h1 className="mt-6 text-2xl font-bold text-slate-900">Staff sign in</h1>
           <p className="mt-1 text-sm text-slate-500">Azad Government of the State of Jammu &amp; Kashmir</p>
           <LoginForm />

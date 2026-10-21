@@ -24,7 +24,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
         ["Overview & identity", "/about"],
         ["History timeline", "/about#history"],
         ["The Kashmir Cause", "/kashmir-cause"],
-        ["AJ&K map", "/ajk-map"],
+        ["AJK map", "/ajk-map"],
       ],
     ],
     [
@@ -54,7 +54,7 @@ export function SiteFooter({ settings }: { settings: Settings }) {
         <div>
           <div className="flex items-center gap-4">
             <span className="relative size-16 shrink-0 rounded-full bg-white p-1">
-              <Image src="/images/site/seal.png" alt="Seal of the Government of AJ&K" fill sizes="64px" className="object-contain p-0.5" />
+              <Image src="/images/site/seal.png" alt="Seal of the Government of AJK" fill sizes="64px" className="object-contain p-0.5" />
             </span>
             <div>
               <p className="font-display text-xl font-semibold">{settings.siteName}</p>

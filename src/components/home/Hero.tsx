@@ -61,7 +61,7 @@ export function Hero({ slides, eyebrow, title, urdu, subtitle, jobsUrl, tendersU
                 The Kashmir Cause <ArrowRight className="size-4" />
               </Link>
               <Link href="/about" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3.5 font-semibold text-white backdrop-blur transition hover:bg-white/10">
-                Discover AJ&amp;K
+                Discover AJK
               </Link>
             </div>
           </div>

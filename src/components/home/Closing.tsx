@@ -24,7 +24,7 @@ export function DepartmentsStrip({ departments, total }: { departments: Departme
           align="center"
           eyebrow="Departments"
           title={`${total} departments, courts and services`}
-          text="Find any office of the Government of AJ&K and go straight to its website."
+          text="Find any office of the Government of AJK and go straight to its website."
           action={
             <Link href="/departments" className="inline-flex items-center gap-2 rounded-full bg-pine-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-800">
               Department directory <ArrowRight className="size-4" />
@@ -59,7 +59,7 @@ export function MapAndHelplines() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-r from-pine-950 via-pine-900/85 to-pine-900/20" />
           <div className="flex max-w-sm flex-col justify-end">
             <Map className="size-9 text-saffron" />
-            <h3 className="mt-4 font-display text-3xl font-semibold">Map of AJ&amp;K</h3>
+            <h3 className="mt-4 font-display text-3xl font-semibold">Map of AJK</h3>
             <p className="mt-3 text-white/80">Ten districts in three divisions, from the Neelum Valley in the north to Bhimber in the south.</p>
             <span className="mt-6 inline-flex items-center gap-2 font-semibold text-saffron">
               View the map <ArrowRight className="size-4 transition group-hover:translate-x-1" />

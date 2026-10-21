@@ -11,7 +11,7 @@ export default async function ContactPage() {
   const { settings: s } = await readDB();
   return (
     <>
-      <PageHero eyebrow="Get in touch" title="Contact the Government of AJ&K" text="Send a question, suggestion or complaint. For emergencies, call the numbers on the helplines page." image="/images/site/muzaffarabad-bridge.jpg" />
+      <PageHero eyebrow="Get in touch" title="Contact the Government of AJK" text="Send a question, suggestion or complaint. For emergencies, call the numbers on the helplines page." image="/images/site/muzaffarabad-bridge.jpg" />
       <section className="container-ajk grid gap-12 py-16 lg:grid-cols-[1fr_1.6fr]">
         <aside className="space-y-5">
           <div className="rounded-3xl border border-line bg-white p-6">

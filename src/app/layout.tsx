@@ -12,7 +12,7 @@ const nastaliq = Noto_Nastaliq_Urdu({ variable: "--font-nastaliq", subsets: ["ar
 export const metadata: Metadata = {
   title: {
     default: "Azad Government of the State of Jammu & Kashmir | Official Portal",
-    template: "%s | Government of AJ&K",
+    template: "%s | Government of AJK",
   },
   description:
     "Official portal of the Azad Government of the State of Jammu & Kashmir: news, leadership, departments, helplines and the Kashmir cause.",

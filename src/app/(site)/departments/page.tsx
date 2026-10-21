@@ -11,7 +11,7 @@ export default async function DepartmentsPage() {
   const cats = [...new Set([...DEPARTMENT_CATEGORIES, ...db.departments.map((d) => d.category)])].filter((c) => db.departments.some((d) => d.category === c));
   return (
     <>
-      <PageHero eyebrow="Directory" title="Departments & offices" text="Courts, departments, authorities, institutions and online services of the Government of AJ&K." image="/images/site/muzaffarabad-bridge.jpg" />
+      <PageHero eyebrow="Directory" title="Departments & offices" text="Courts, departments, authorities, institutions and online services of the Government of AJK." image="/images/site/muzaffarabad-bridge.jpg" />
       <section className="container-ajk py-14">
         <DepartmentDirectory departments={byOrder(db.departments)} categories={cats} />
       </section>

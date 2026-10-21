@@ -7,14 +7,14 @@ import { Glance } from "@/components/home/Glance";
 import { Timeline } from "@/components/home/Timeline";
 import { Img } from "@/components/site/Img";
 
-export const metadata: Metadata = { title: "About AJ&K" };
+export const metadata: Metadata = { title: "About AJK" };
 
 export default async function AboutPage() {
   const db = await readDB();
   const s = db.settings;
   return (
     <>
-      <PageHero eyebrow="About AJ&K" title="Azad Jammu & Kashmir" text={s.intro} image="/images/site/hero-neelum-valley.jpg" />
+      <PageHero eyebrow="About AJK" title="Azad Jammu & Kashmir" text={s.intro} image="/images/site/hero-neelum-valley.jpg" />
       <section className="py-20">
         <div className="container-ajk grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>

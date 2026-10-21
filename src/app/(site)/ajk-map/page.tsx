@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 import { PageHero } from "@/components/site/SiteFooter";
 import { Img } from "@/components/site/Img";
 
-export const metadata: Metadata = { title: "AJ&K Map" };
+export const metadata: Metadata = { title: "AJK Map" };
 
 const DIVISIONS = [
   ["Muzaffarabad Division", "Muzaffarabad, Neelum, Hattian Bala"],
@@ -14,7 +14,7 @@ const DIVISIONS = [
 export default function MapPage() {
   return (
     <>
-      <PageHero eyebrow="About AJ&K" title="Map of Azad Jammu & Kashmir" text="Administrative map showing the ten districts of AJ&K." image="/images/site/hero-banjosa-lake.jpg" />
+      <PageHero eyebrow="About AJK" title="Map of Azad Jammu & Kashmir" text="Administrative map showing the ten districts of AJK." image="/images/site/hero-banjosa-lake.jpg" />
       <section className="container-ajk grid gap-12 py-16 lg:grid-cols-[1.3fr_1fr]">
         <a href="/images/site/map.jpg" target="_blank" className="group relative block aspect-[1024/1553] overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-line">
           <Img src="/images/site/map.jpg" alt="Administrative map of Azad Jammu & Kashmir" fill sizes="(min-width:1024px) 700px, 100vw" className="object-contain" />

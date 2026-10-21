@@ -8,7 +8,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# AJ&K Government Portal
+# AJK Government Portal
 
 Redesign of ajk.gov.pk with a built-in admin panel. Read `README.md` first, then `docs/SECURITY.md` before touching auth, uploads or headers.
 

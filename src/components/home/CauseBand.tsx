@@ -43,7 +43,7 @@ export function CauseBand({
   const facts = [
     [`${years}`, "years on the UN Security Council agenda"],
     ["1948", "UNSC Resolution 47 promises a plebiscite"],
-    ["1947", "AJ&K liberated by its own people on 24 October"],
+    ["1947", "AJK liberated by its own people on 24 October"],
   ];
   return (
     <section className="relative isolate overflow-hidden bg-pine-900 py-20 text-white sm:py-28" aria-labelledby="cause-title">

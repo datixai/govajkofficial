@@ -26,7 +26,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           <Link href="/admin" className="flex items-center gap-3">
             <Image src="/images/site/seal.png" alt="" width={36} height={36} className="rounded-full bg-white" />
             <span className="leading-tight">
-              <span className="block text-sm font-bold text-white">AJ&amp;K Portal</span>
+              <span className="block text-sm font-bold text-white">AJK Portal</span>
               <span className="block text-xs text-white/60">Content management</span>
             </span>
           </Link>

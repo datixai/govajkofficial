@@ -25,8 +25,8 @@ const ABOUT = [
   { label: "Overview & identity", href: "/about" },
   { label: "History timeline", href: "/about#history" },
   { label: "Days of remembrance", href: "/about#days" },
-  { label: "AJ&K map", href: "/ajk-map" },
-  { label: "AJ&K at a glance (statistics)", href: "https://pndajk.gov.pk/statyearbook.php?page=AJK%20at%20a%20Glance" },
+  { label: "AJK map", href: "/ajk-map" },
+  { label: "AJK at a glance (statistics)", href: "https://pndajk.gov.pk/statyearbook.php?page=AJK%20at%20a%20Glance" },
 ];
 
 const isExternal = (href: string) => /^https?:\/\//.test(href);
@@ -140,7 +140,7 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
             </Link>
             {(
               [
-                ["about", "About J&K", "/about"],
+                ["about", "About JK", "/about"],
                 ["departments", "Departments", "/departments"],
                 ["services", "Services", "/helplines"],
               ] as const
@@ -246,7 +246,7 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
                   {l}
                 </Link>
               ))}
-              <p className="eyebrow mt-4 px-3 text-saffron">About J&amp;K</p>
+              <p className="eyebrow mt-4 px-3 text-saffron">About JK</p>
               {ABOUT.map((l) => (
                 <NavLink key={l.label} href={l.href} className="rounded-lg px-3 py-2 text-white/80 hover:bg-white/5" onClick={() => setMobile(false)}>
                   {l.label}

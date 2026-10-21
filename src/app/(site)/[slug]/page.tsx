@@ -26,7 +26,7 @@ export default async function ContentPage({ params }: Props) {
 
   return (
     <>
-      <PageHero eyebrow={isCause ? "Identity and struggle" : "Government of AJ&K"} title={page.title} text={page.subtitle} image={page.heroImage} />
+      <PageHero eyebrow={isCause ? "Identity and struggle" : "Government of AJK"} title={page.title} text={page.subtitle} image={page.heroImage} />
       <div className="container-ajk grid gap-12 py-16 lg:grid-cols-[260px_1fr] lg:py-20">
         <aside className="lg:sticky lg:top-32 lg:self-start">
           {headings.length > 1 && (

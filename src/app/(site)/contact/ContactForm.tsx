@@ -15,7 +15,7 @@ export function ContactForm() {
           <Check className="size-7" />
         </span>
         <p className="mt-5 font-display text-2xl font-semibold text-pine-900">Thank you</p>
-        <p className="mt-2 text-muted">Your message has been received by the Government of AJ&amp;K.</p>
+        <p className="mt-2 text-muted">Your message has been received by the Government of AJK.</p>
       </div>
     );
   return (

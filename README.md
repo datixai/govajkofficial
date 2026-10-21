@@ -1,4 +1,4 @@
-# AJ&K Government Portal (redesign concept)
+# AJK Government Portal (redesign concept)
 
 A redesign of the official portal of the Azad Government of the State of Jammu & Kashmir (ajk.gov.pk), built as a pitch. It keeps the existing photos, departments, helplines and all 72 news stories, fixes the problems of the current site, and adds a full content management (admin) panel.
 

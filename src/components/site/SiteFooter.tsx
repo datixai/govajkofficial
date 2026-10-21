@@ -85,6 +85,17 @@ export function SiteFooter({ settings }: { settings: Settings }) {
             <Social href={settings.twitter} label="X" path="M17.8 3h3.1l-6.8 7.8 8 10.2h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.9 3h6.4l4.4 5.9L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z" />
             <Social href={settings.youtube} label="YouTube" path="M23 12s0-3.6-.5-5.3a2.8 2.8 0 0 0-2-2C18.8 4.2 12 4.2 12 4.2s-6.8 0-8.5.5a2.8 2.8 0 0 0-2 2C1 8.4 1 12 1 12s0 3.6.5 5.3a2.8 2.8 0 0 0 2 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 0 0 2-2c.5-1.7.5-5.3.5-5.3ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z" />
           </div>
+          <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-3" aria-label="Flags">
+            {[
+              ["/images/flags/ajk.jpg", "Flag of Azad Jammu and Kashmir", "Azad Jammu Kashmir"],
+              ["/images/flags/pakistan.svg", "Flag of Pakistan", "Pakistan"],
+            ].map(([src, alt, label]) => (
+              <li key={label} className="flex items-center gap-2.5 text-xs font-medium text-white/70">
+                <Image src={src} alt={alt} width={30} height={20} unoptimized className="h-5 w-[30px] rounded-[3px] object-cover shadow-sm ring-1 ring-white/25" />
+                {label}
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="grid gap-10 sm:grid-cols-3">
           {cols.map(([title, links]) => (

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ajk-portal",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "D:/AJK-Gov-Redesign", "run", "dev", "--", "-p", "3100"],
+      "port": 3100
+    }
+  ]
+}

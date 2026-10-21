@@ -49,3 +49,4 @@ data/content.json
 data/users.json
 data/uploads/
 data/*.tmp
+tests/fake.jpg

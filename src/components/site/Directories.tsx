@@ -60,7 +60,7 @@ export function DepartmentDirectory({ departments, categories }: { departments: 
       {grouped.map(([c, items]) => (
         <div key={c} className="mt-12">
           <h2 className="font-display text-2xl font-semibold text-pine-900">{c}</h2>
-          <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((d) => (
               <li key={d.id}>
                 <a href={d.url} target="_blank" rel="noopener noreferrer" className="group flex h-full items-center gap-4 rounded-2xl border border-line bg-white p-4 transition hover:border-pine-500 hover:shadow-lg">

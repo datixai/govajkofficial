@@ -32,7 +32,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           </Link>
         }
       />
-      <div className="min-w-0">{children}</div>
+      <main id="main" className="min-w-0">{children}</main>
     </div>
   );
 }

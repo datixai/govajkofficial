@@ -78,7 +78,7 @@
    "name": "Dr. Muhammad Najeeb Naqi Khan",
    "role": "President AJK",
    "image": "/images/site/president.jpg",
-   "link": "https://presidentajk.gov.pk/",
+   "link": "",
    "bio": "Dr. Muhammad Najeeb Naqi was sworn in as the 23rd President of the Azad Government of the State of Jammu and Kashmir by the AJK Legislative Assembly on 24 September 2026, after securing a clear majority in the presidential election.",
    "order": 1,
    "createdAt": "2026-10-21T00:00:00.000Z",
@@ -1382,7 +1382,7 @@
   {
    "id": "dept-010",
    "name": "Health",
-   "url": "https://health.ajk.gov.pk/",
+   "url": "https://healthajk.gok.pk/",
    "category": "Government Departments",
    "logo": "",
    "featured": false,
@@ -1392,23 +1392,12 @@
   },
   {
    "id": "dept-011",
-   "name": "Information Department",
-   "url": "https://information.ajk.gov.pk/",
+   "name": "Information Department (DGPR)",
+   "url": "https://pid.ajk.gov.pk/",
    "category": "Government Departments",
    "logo": "/images/site/dept-information.png",
    "featured": true,
    "order": 11,
-   "createdAt": "2026-10-21T00:00:00.000Z",
-   "updatedAt": "2026-10-21T00:00:00.000Z"
-  },
-  {
-   "id": "dept-012",
-   "name": "DGPR",
-   "url": "http://pid.ajk.gov.pk/",
-   "category": "Government Departments",
-   "logo": "",
-   "featured": false,
-   "order": 12,
    "createdAt": "2026-10-21T00:00:00.000Z",
    "updatedAt": "2026-10-21T00:00:00.000Z"
   },

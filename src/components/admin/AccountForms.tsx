@@ -94,9 +94,12 @@ export function TwoFactorPanel({ enabled }: { enabled: boolean }) {
 
   if (!setup)
     return (
-      <button type="button" disabled={loading} onClick={() => start(async () => setSetup(await startTwoFactor()))} className={`${btn} mt-5`}>
-        {loading && <LoaderCircle className="size-4 animate-spin" />} Set up two-factor login
-      </button>
+      <div className="mt-5 space-y-4">
+        {disState.ok && <Status state={disState} />}
+        <button type="button" disabled={loading} onClick={() => start(async () => setSetup(await startTwoFactor()))} className={btn}>
+          {loading && <LoaderCircle className="size-4 animate-spin" />} Set up two-factor login
+        </button>
+      </div>
     );
 
   return (

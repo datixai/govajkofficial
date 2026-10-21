@@ -16,6 +16,7 @@ Reviewed on 21 October 2026.
 | 8 | Several department links use insecure `http://` | Menu links (PSC, EC, HED, DGPR, BOI, C&W, SIC, Jobs) | Kept as they are (those sites need HTTPS themselves); listed here for the IT Board |
 | 9 | No search, no contact form, no way for citizens to send feedback | Whole site | Site search (news, pages, departments, helplines) and a contact form with spam protection; messages arrive in the admin panel |
 | 10 | Helplines page is one long table with several empty numbers | Helplines page | Tabs, search, tap-to-call on phones, and "Number not listed" instead of empty cells |
+| 12 | Three links on the current site point to domains that no longer exist: presidentajk.gov.pk, information.ajk.gov.pk and health.ajk.gov.pk | DNS lookup fails for all three | Health now links to healthajk.gok.pk, Information to the DGPR site (pid.ajk.gov.pk); the President link is hidden until a working address is confirmed |
 | 11 | Old WordPress plugins, jQuery and many scripts slow the site down | Page source | Modern Next.js site, optimised images, much less JavaScript |
 
 ## 2. Corrections to content

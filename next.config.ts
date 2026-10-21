@@ -14,6 +14,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  devIndicators: false,
   images: {
     remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com" }],
   },

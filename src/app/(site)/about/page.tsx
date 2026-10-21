@@ -14,7 +14,7 @@ export default async function AboutPage() {
   const s = db.settings;
   return (
     <>
-      <PageHero eyebrow="About AJ&K" title="Azad Jammu & Kashmir" text={s.intro} image="/images/site/video-2.jpg" />
+      <PageHero eyebrow="About AJ&K" title="Azad Jammu & Kashmir" text={s.intro} image="/images/site/hero-neelum-valley.jpg" />
       <section className="py-20">
         <div className="container-ajk grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>

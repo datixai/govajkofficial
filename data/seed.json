@@ -33,17 +33,41 @@
   },
   {
    "id": "hero-002",
-   "title": "Muzaffarabad by night",
-   "image": "/images/site/page-header.jpeg",
+   "title": "Neelum Valley",
+   "image": "/images/site/hero-neelum-valley.jpg",
    "order": 2,
    "createdAt": "2026-10-21T00:00:00.000Z",
    "updatedAt": "2026-10-21T00:00:00.000Z"
   },
   {
    "id": "hero-003",
-   "title": "Neelum Valley",
-   "image": "/images/site/video-2.jpg",
+   "title": "Muzaffarabad by night",
+   "image": "/images/site/page-header.jpeg",
    "order": 3,
+   "createdAt": "2026-10-21T00:00:00.000Z",
+   "updatedAt": "2026-10-21T00:00:00.000Z"
+  },
+  {
+   "id": "hero-004",
+   "title": "Arang Kel, Neelum Valley",
+   "image": "/images/site/hero-arang-kel.jpg",
+   "order": 4,
+   "createdAt": "2026-10-21T00:00:00.000Z",
+   "updatedAt": "2026-10-21T00:00:00.000Z"
+  },
+  {
+   "id": "hero-005",
+   "title": "Sharda, Neelum Valley",
+   "image": "/images/site/hero-sharda.jpg",
+   "order": 5,
+   "createdAt": "2026-10-21T00:00:00.000Z",
+   "updatedAt": "2026-10-21T00:00:00.000Z"
+  },
+  {
+   "id": "hero-006",
+   "title": "Banjosa Lake, Poonch",
+   "image": "/images/site/hero-banjosa-lake.jpg",
+   "order": 6,
    "createdAt": "2026-10-21T00:00:00.000Z",
    "updatedAt": "2026-10-21T00:00:00.000Z"
   }

@@ -41,11 +41,11 @@ export function Hero({ slides, eyebrow, title, urdu, subtitle, jobsUrl, tendersU
             <Img src={s.image} alt="" fill priority={n === 0} sizes="100vw" className={`object-cover ${n === i ? "animate-kenburns" : ""}`} />
           </div>
         ))}
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(5,34,21,.78)_0%,rgba(5,34,21,.55)_45%,rgba(5,34,21,.35)_100%),linear-gradient(0deg,rgba(5,34,21,.95)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_55%_at_50%_48%,rgba(5,34,21,.62)_0%,rgba(5,34,21,.28)_70%,rgba(5,34,21,.12)_100%),linear-gradient(0deg,rgba(5,34,21,.92)_0%,transparent_38%),linear-gradient(180deg,rgba(0,0,0,.45)_0%,transparent_22%)]" />
         <ChinarLeaf className="absolute -left-20 top-28 -z-10 size-80 -rotate-12 text-chinar/20" veins={false} />
 
         <div className="container-ajk">
-          <div className="mx-auto max-w-4xl text-center text-white">
+          <div className="mx-auto max-w-4xl text-center text-white [text-shadow:0_2px_24px_rgba(0,0,0,.45)]">
             <p className="eyebrow flex items-center justify-center gap-3 text-saffron animate-rise">
               <span className="h-px w-8 bg-saffron" /> {eyebrow} <span className="h-px w-8 bg-saffron" />
             </p>

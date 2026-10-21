@@ -21,6 +21,7 @@ interface Props {
 }
 
 const ABOUT = [
+  { label: "The Kashmir Cause", href: "/kashmir-cause" },
   { label: "Overview & identity", href: "/about" },
   { label: "History timeline", href: "/about#history" },
   { label: "Days of remembrance", href: "/about#days" },
@@ -139,21 +140,16 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
             </Link>
             {(
               [
-                ["about", "About AJ&K", "/about"],
+                ["about", "About J&K", "/about"],
                 ["departments", "Departments", "/departments"],
                 ["services", "Services", "/helplines"],
               ] as const
             ).map(([key, label, href], idx) => (
               <div key={key} className="contents">
                 {idx === 1 && (
-                  <>
-                    <Link href="/kashmir-cause" className={linkCls("/kashmir-cause")}>
-                      Kashmir Cause
-                    </Link>
-                    <Link href="/news" className={linkCls("/news")}>
-                      News
-                    </Link>
-                  </>
+                  <Link href="/news" className={linkCls("/news")}>
+                    News
+                  </Link>
                 )}
                 <button
                   type="button"
@@ -167,9 +163,6 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
                 </button>
               </div>
             ))}
-            <a href={jobsUrl} target="_blank" rel="noopener noreferrer" className={linkCls(jobsUrl)}>
-              Jobs
-            </a>
             <Link href="/contact" className={linkCls("/contact")}>
               Contact
             </Link>
@@ -243,7 +236,6 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
             <nav className="flex flex-col gap-1 p-4 text-[0.95rem]">
               {[
                 ["Home", "/"],
-                ["Kashmir Cause", "/kashmir-cause"],
                 ["News & Updates", "/news"],
                 ["Departments", "/departments"],
                 ["Helplines", "/helplines"],
@@ -254,7 +246,7 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
                   {l}
                 </Link>
               ))}
-              <p className="eyebrow mt-4 px-3 text-saffron">About AJ&amp;K</p>
+              <p className="eyebrow mt-4 px-3 text-saffron">About J&amp;K</p>
               {ABOUT.map((l) => (
                 <NavLink key={l.label} href={l.href} className="rounded-lg px-3 py-2 text-white/80 hover:bg-white/5" onClick={() => setMobile(false)}>
                   {l.label}

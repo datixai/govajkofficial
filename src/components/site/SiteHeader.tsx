@@ -167,9 +167,9 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
                 </button>
               </div>
             ))}
-            <Link href="/videos" className={linkCls("/videos")}>
-              Videos
-            </Link>
+            <a href={jobsUrl} target="_blank" rel="noopener noreferrer" className={linkCls(jobsUrl)}>
+              Jobs
+            </a>
             <Link href="/contact" className={linkCls("/contact")}>
               Contact
             </Link>
@@ -245,7 +245,6 @@ export function SiteHeader({ siteName, urduName, departments, jobsUrl, tendersUr
                 ["Home", "/"],
                 ["Kashmir Cause", "/kashmir-cause"],
                 ["News & Updates", "/news"],
-                ["Videos", "/videos"],
                 ["Departments", "/departments"],
                 ["Helplines", "/helplines"],
                 ["Contact", "/contact"],

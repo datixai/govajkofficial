@@ -18,6 +18,11 @@ interface Props {
 
 export function Hero({ slides, eyebrow, title, urdu, subtitle, jobsUrl, tendersUrl }: Props) {
   const [i, setI] = useState(0);
+  // Load each photo only when it is about to be shown, not all at once.
+  const [shown, setShown] = useState<Set<number>>(() => new Set([0, 1]));
+  useEffect(() => {
+    setShown((s) => (s.has(i) && s.has((i + 1) % slides.length) ? s : new Set([...s, i, (i + 1) % slides.length])));
+  }, [i, slides.length]);
   useEffect(() => {
     if (slides.length < 2) return;
     const t = setInterval(() => setI((n) => (n + 1) % slides.length), 7000);
@@ -36,9 +41,9 @@ export function Hero({ slides, eyebrow, title, urdu, subtitle, jobsUrl, tendersU
   return (
     <section className="relative isolate">
       <div className="relative isolate flex min-h-[640px] items-end overflow-hidden bg-pine-950 pb-40 pt-40 sm:min-h-[760px] lg:min-h-[94vh] lg:pb-48">
-        {slides.map((s, n) => (
+        {slides.map((s, n) => shown.has(n) && (
           <div key={s.id} className={`absolute inset-0 -z-20 transition-opacity duration-[1600ms] ${n === i ? "opacity-100" : "opacity-0"}`} aria-hidden={n !== i}>
-            <Img src={s.image} alt="" fill priority={n === 0} sizes="100vw" className={`object-cover ${n === i ? "animate-kenburns" : ""}`} />
+            <Img src={s.image} alt="" fill priority={n === 0} quality={70} sizes="100vw" className={`object-cover ${n === i ? "animate-kenburns" : ""}`} />
           </div>
         ))}
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_55%_at_50%_48%,rgba(5,34,21,.62)_0%,rgba(5,34,21,.28)_70%,rgba(5,34,21,.12)_100%),linear-gradient(0deg,rgba(5,34,21,.92)_0%,transparent_38%),linear-gradient(180deg,rgba(0,0,0,.45)_0%,transparent_22%)]" />

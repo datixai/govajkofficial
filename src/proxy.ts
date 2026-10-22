@@ -47,7 +47,8 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     {
-      source: "/((?!_next/static|_next/image|images/|media/|chinar-leaf.svg|icon.svg|robots.txt).*)",
+      // Admin only: public pages are static and use the CSP from next.config.
+      source: "/admin/:path*",
       missing: [
         { type: "header", key: "next-router-prefetch" },
         { type: "header", key: "purpose", value: "prefetch" },

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, Phone, Search } from "lucide-react";
 import { Img } from "./Img";
 
@@ -85,6 +85,11 @@ export function DepartmentDirectory({ departments, categories }: { departments: 
 export function HelplineDirectory({ helplines, categories, initial }: { helplines: Help[]; categories: string[]; initial: string }) {
   const [q, setQ] = useState("");
   const [cat, setCat] = useState(initial);
+  // The page is static, so the ?c= tab is read in the browser.
+  useEffect(() => {
+    const c = new URLSearchParams(window.location.search).get("c");
+    if (c && categories.includes(c)) setCat(c);
+  }, [categories]);
   const groups = useMemo(() => {
     const term = q.toLowerCase();
     const rows = helplines.filter((h) => (term ? true : h.category === cat) && `${h.group} ${h.designation} ${h.number} ${h.category}`.toLowerCase().includes(term));

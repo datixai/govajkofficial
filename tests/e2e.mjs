@@ -27,7 +27,7 @@ function totp(secret) {
   return String((((h[o] & 0x7f) << 24) | (h[o + 1] << 16) | (h[o + 2] << 8) | h[o + 3]) % 1e6).padStart(6, "0");
 }
 
-const browser = await chromium.launch({ executablePath: process.env.BROWSER_PATH || "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", headless: true });
+const browser = await chromium.launch({ executablePath: process.env.BROWSER_PATH || "C:/Program Files/Google/Chrome/Application/chrome.exe", headless: false, args: ["--headless=new"] });
 
 async function newPage(ctx) {
   const p = await ctx.newPage();
@@ -62,7 +62,7 @@ page.on("dialog", (d) => {
 try {
   await page.goto(B + "/");
   ok("Home loads", (await page.title()).includes("Jammu"));
-  ok("Hero has 6 photos", (await page.locator("section").first().locator("img").count()) >= 6);
+  ok("Hero loads first photos only (fast start)", (await page.locator("section").first().locator("img").count()) === 2);
   // carousel arrows
   const before = await page.locator("[aria-roledescription=carousel] p.font-medium").textContent();
   await page.click("button[aria-label='Next banner']");
@@ -323,7 +323,8 @@ try {
   await page.goto(`${B}/admin/c/slides/new`);
   await page.fill("input[name=title]", "ZZTEST upload in form");
   await page.setInputFiles("form input[type=file]", "public/images/site/tourism.jpg");
-  await page.waitForFunction(() => document.querySelector("input[type=hidden][name=image]")?.value.startsWith("/media/"), null, { timeout: 15000 });
+  for (let t = 0; t < 30 && !(await page.locator("input[type=hidden][name=image]").inputValue()).startsWith("/media/"); t++) await page.waitForTimeout(500);
+  if (!(await page.locator("input[type=hidden][name=image]").inputValue()).startsWith("/media/")) throw new Error("upload in form did not finish");
   ok("Upload from inside an edit form", true);
   await page.click("form button:has-text('Save')");
   await page.waitForURL(/saved=1/);
